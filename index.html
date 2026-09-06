@@ -101,9 +101,14 @@ hide: true
 
   <section class="lab-section lab-section--tint">
     <h2>Selected publications</h2>
-    {% assign selected = site.data.publications | where_exp: "p", "p.note == 'First author' or p.journal == 'Nature'" %}
-    {% for p in selected limit: 4 %}
-    {% include publication.html pub=p %}
+    {% assign shown = 0 %}
+    {% for p in site.data.publications %}
+      {% if shown < 4 %}
+        {% if p.note == "First author" or p.journal == "Nature" %}
+          {% include publication.html pub=p %}
+          {% assign shown = shown | plus: 1 %}
+        {% endif %}
+      {% endif %}
     {% endfor %}
     <p style="margin-top:1rem"><a class="btn-lab btn-lab--ghost" href="{{ '/publications/' | relative_url }}">Full list</a></p>
   </section>
