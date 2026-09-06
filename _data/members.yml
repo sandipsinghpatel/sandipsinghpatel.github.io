@@ -1,0 +1,44 @@
+# Team members. Photos go in assets/img/members/ (square images work best, ~400x400 px).
+# Delete the placeholder entries and add real people. Alumni are listed at the bottom.
+
+current:
+  - name: Dr Sandip Kumar Patel
+    role: Principal Investigator · Director, Proteomics Facility
+    photo: assets/img/members/sandip.jpg
+    email: skp59@cam.ac.uk
+    bio: >
+      Sandip trained in quantitative proteomics and clinical biomarker discovery at IIT Bombay
+      (integrated M.Sc.–Ph.D.), then joined the Buck Institute for Research on Aging as a Glenn
+      Postdoctoral Fellow, where he studied cellular senescence and extracellular vesicles.
+      Since 2023 he has directed the Proteomics Facility at the MRC Toxicology Unit, University
+      of Cambridge, where his research focuses on healthy brain ageing, senescence-driven
+      neuroinflammation and extracellular-vesicle therapeutics.
+    links:
+      - label: Google Scholar
+        url: https://scholar.google.com/
+      - label: ORCID
+        url: https://orcid.org/
+
+  - name: Postdoctoral Researcher
+    role: Postdoctoral Research Associate
+    photo: assets/img/members/placeholder.svg
+    bio: >
+      Placeholder — replace with a short biography (two or three sentences on background,
+      current project and technique focus).
+
+  - name: PhD Student
+    role: PhD Student
+    photo: assets/img/members/placeholder.svg
+    bio: >
+      Placeholder — replace with a short biography.
+
+  - name: Research Assistant
+    role: Research Assistant · Proteomics Facility
+    photo: assets/img/members/placeholder.svg
+    bio: >
+      Placeholder — replace with a short biography.
+
+alumni:
+  - name: Former Member
+    role: Visiting Student, 2024
+    now: Now at …

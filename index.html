@@ -1,0 +1,115 @@
+---
+layout: default
+title: Home
+hide: true
+---
+<div class="home">
+  <style scoped>
+    .call-out_img { background-image: url('{{ site.header_feature_image | relative_url }}'); }
+    @media screen and (max-width: 768px) {
+      .call-out_img { background-image: url('{{ site.header_feature_image | relative_url | replace: ".jpg", "-medium.jpg" }}'); }
+    }
+    @media screen and (max-width: 576px) {
+      .call-out_img { background-image: url('{{ site.header_feature_image | relative_url | replace: ".jpg", "-small.jpg" }}'); }
+    }
+  </style>
+
+  <div id="main" class="call-out call-out_img">
+    <h1>{{ site.header_text }}</h1>
+    <p class="call-out__sub">Quantitative proteomics to understand how cellular senescence, inflammation and extracellular vesicles shape the ageing brain — and how to intervene.</p>
+  </div>
+
+  <section class="lab-section">
+    <div class="lab-intro">
+      <div>
+        <h2>Ageing across biological length scales</h2>
+        <p class="lab-intro__lead">
+          We are a mass-spectrometry proteomics group led by <strong>Dr Sandip Kumar Patel</strong> at the
+          <a href="https://www.mrc-tox.cam.ac.uk/">MRC Toxicology Unit, University of Cambridge</a>.
+          We integrate deep quantitative proteomics with human iPSC-derived neural models and
+          extracellular-vesicle biology to ask how senescent cells and their secretome drive
+          neuroinflammation and neurodegeneration, and how those signals can be measured in blood
+          and targeted therapeutically.
+        </p>
+        <p>
+          Alongside our own research, Sandip directs the Unit's <strong>Proteomics Facility</strong>,
+          which provides DDA, DIA, TMT and targeted LC-MS/MS workflows, reproducible quality control,
+          data analysis and hands-on training for researchers across Cambridge and beyond.
+        </p>
+        <p>
+          <a class="btn-lab" href="{{ '/research/' | relative_url }}">Our research</a>
+          <a class="btn-lab btn-lab--ghost" href="{{ '/join-us/' | relative_url }}">Join us</a>
+        </p>
+      </div>
+      <aside class="lab-intro__aside">
+        <h3>At a glance</h3>
+        <ul>
+          <li><span class="chip">Proteomics</span><span class="chip chip--amber">Senescence</span><span class="chip chip--coral">Brain ageing</span></li>
+          <li><strong>Where:</strong> MRC Toxicology Unit, Gleeson Building, Tennis Court Road, Cambridge</li>
+          <li><strong>Instruments:</strong> Thermo Orbitrap Exploris 480 and Fusion</li>
+          <li><strong>Models:</strong> hiPSC-derived neurons, astrocytes and microglia; 3D organoids; mouse brain</li>
+          <li><strong>Contact:</strong> <a href="mailto:skp59@cam.ac.uk">skp59@cam.ac.uk</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <section class="lab-section lab-section--tint">
+    <h2>Research themes</h2>
+    <div class="lab-cards">
+      <div class="lab-card">
+        <span class="lab-card__letter">A.</span><h3>Senescence, SASP and extracellular vesicles</h3>
+        <p>Proteomic and lipidomic signatures of senescent cells and their vesicles, and what circulating exosomes reveal about biological age.</p>
+        <a class="lab-card__more" href="{{ '/research/#theme-a' | relative_url }}">Read more →</a>
+      </div>
+      <div class="lab-card lab-card--amber">
+        <span class="lab-card__letter">B.</span><h3>Healthy brain ageing and neuroinflammation</h3>
+        <p>How senescent glia and neurons remodel the ageing brain, and the routes from senescence to Alzheimer's disease pathology.</p>
+        <a class="lab-card__more" href="{{ '/research/#theme-b' | relative_url }}">Read more →</a>
+      </div>
+      <div class="lab-card lab-card--coral">
+        <span class="lab-card__letter">C.</span><h3>Proteomics technology and data science</h3>
+        <p>DIA, low-input and single-cell proteomics, PTM and thermal-proteome profiling, and AI/ML for multi-omics integration.</p>
+        <a class="lab-card__more" href="{{ '/research/#theme-c' | relative_url }}">Read more →</a>
+      </div>
+      <div class="lab-card">
+        <span class="lab-card__letter">D.</span><h3>Translational biomarkers</h3>
+        <p>From clinical proteomics of malaria and dengue to plasma signatures of ageing: biomarker discovery that reaches the clinic.</p>
+        <a class="lab-card__more" href="{{ '/research/#theme-d' | relative_url }}">Read more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="lab-section">
+    <h2>Latest news</h2>
+    <div class="news-teasers">
+      {% for post in site.posts limit: 3 %}
+      <div class="news-teaser">
+        <div class="news-teaser__date">{{ post.date | date: site.data.language.str_date_format }}</div>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <p style="margin-top:1.2rem"><a class="btn-lab btn-lab--ghost" href="{{ '/news/' | relative_url }}">All news</a></p>
+  </section>
+
+  <section class="lab-section lab-section--tint">
+    <h2>Selected publications</h2>
+    {% assign selected = site.data.publications | where_exp: "p", "p.note == 'First author' or p.journal == 'Nature'" %}
+    {% for p in selected limit: 4 %}
+    {% include publication.html pub=p %}
+    {% endfor %}
+    <p style="margin-top:1rem"><a class="btn-lab btn-lab--ghost" href="{{ '/publications/' | relative_url }}">Full list</a></p>
+  </section>
+
+  <section class="lab-section">
+    <h2>Supported by</h2>
+    <div class="affiliations">
+      <span class="affiliation">Medical Research Council (UKRI)</span>
+      <span class="affiliation">University of Cambridge</span>
+      <span class="affiliation">MRC Toxicology Unit</span>
+      <span class="affiliation">Glenn Foundation for Medical Research</span>
+    </div>
+  </section>
+</div>

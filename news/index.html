@@ -1,0 +1,24 @@
+---
+layout: page
+title: News
+subtitle: Papers, people, talks and lab life
+permalink: /news/
+position: 4
+feature-img: "assets/img/header/news.jpg"
+---
+
+<div class="lab-section news-list" style="padding-top:0">
+  {% for post in site.posts %}
+  <article class="news-item">
+    <div class="news-item__date">{{ post.date | date: site.data.language.str_date_format }}</div>
+    <div>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt | strip_html }}</p>
+      {% if post.tags.size > 0 %}
+      <div>{% for t in post.tags %}<span class="chip">{{ t }}</span>{% endfor %}</div>
+      {% endif %}
+      <a class="news-item__more" href="{{ post.url | relative_url }}">Read more →</a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,8 @@
+# External links in the navigation bar (internal pages appear automatically
+# from their front matter). Positions of pages: Research 1, Publications 2,
+# Members 3, News 4, Join Us 5.
+- facility:
+  title: Proteomics Facility
+  url: https://www.mrc-tox.cam.ac.uk/facilities/proteomics
+  position: 6
+  hide: true          # set to false once you want it in the menu

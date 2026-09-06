@@ -1,0 +1,13 @@
+{% assign p = include.pub %}
+<div class="pub">
+  <span class="pub__title">{{ p.title }}</span>
+  <span class="pub__authors">{{ p.authors | replace: "S. K. Patel", "<strong>S. K. Patel</strong>" }}</span>
+  <span class="pub__journal">{{ p.journal }}</span> {{ p.year }}{% if p.volume %}; {{ p.volume }}{% endif %}{% if p.pages %}: {{ p.pages }}{% endif %}.
+  {% if p.note %}<span class="chip chip--amber pub__note">{{ p.note }}</span>{% endif %}
+  {% if p.type == "Review" %}<span class="chip pub__note">Review</span>{% endif %}
+  <div class="pub__links">
+    {% if p.doi %}<a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+    {% if p.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ p.pmid }}/" target="_blank" rel="noopener">PubMed</a>{% endif %}
+    {% if p.pdf %}<a href="{{ p.pdf | relative_url }}" target="_blank">PDF</a>{% endif %}
+  </div>
+</div>

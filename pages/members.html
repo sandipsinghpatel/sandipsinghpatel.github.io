@@ -1,0 +1,37 @@
+---
+layout: page
+title: Members
+subtitle: The people behind the proteomes
+permalink: /members/
+position: 3
+feature-img: "assets/img/header/members.jpg"
+---
+
+<div class="lab-section" style="padding-top:0">
+  <h2>Current members</h2>
+  <div class="members-grid">
+    {% for m in site.data.members.current %}
+    <div class="member{% if forloop.first %} member--pi{% endif %}">
+      <img src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">
+      <div>
+        <h3>{{ m.name }}</h3>
+        <div class="member__role">{{ m.role }}</div>
+        {% if m.bio %}<p class="member__bio">{{ m.bio }}</p>{% endif %}
+        <div class="member__links">
+          {% if m.email %}<a href="mailto:{{ m.email }}">Email</a>{% endif %}
+          {% for l in m.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a>{% endfor %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="lab-section lab-section--tint">
+  <h2>Alumni</h2>
+  <ul class="alumni-list">
+    {% for a in site.data.members.alumni %}
+    <li><strong>{{ a.name }}</strong> — {{ a.role }}{% if a.now %}. <em>{{ a.now }}</em>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>

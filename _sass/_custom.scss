@@ -1,0 +1,243 @@
+/* ---------------------------------------------------------------------------
+   Patel Lab — custom styles layered on top of Type on Strap
+   Accent palette echoes Sandip's talk template: 418BCF blue, FFE07D amber, FF8181 red
+   --------------------------------------------------------------------------- */
+
+:root {
+  --accent: #418BCF;
+  --accent-dark: #2d6aa3;
+  --amber: #FFE07D;
+  --coral: #FF8181;
+  --chip-blue: #C9F1FF;
+  --card: #f7f9fc;
+  --link: #2d6aa3;
+}
+
+/* Section wrapper used on every custom page */
+.lab-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 4%;
+
+  h2 {
+    font-size: 1.6em;
+    margin: 0 0 0.6em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px solid var(--amber);
+    display: inline-block;
+  }
+  p { line-height: 1.6; }
+}
+
+.lab-section--tint { background: var(--card); }
+
+/* Home page intro */
+.lab-intro {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+
+  .lab-intro__lead {
+    font-size: 1.15em;
+    line-height: 1.55;
+  }
+  .lab-intro__aside {
+    background: var(--card);
+    border-left: 4px solid var(--accent);
+    padding: 1.2rem 1.4rem;
+    border-radius: 6px;
+    font-size: 0.92em;
+    h3 { margin: 0 0 0.5em; font-size: 1.1em; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { margin: 0.35em 0; }
+  }
+  @media screen and (max-width: 768px) { grid-template-columns: 1fr; }
+}
+
+/* Theme cards (Research themes / services) */
+.lab-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+  margin: 1.2rem 0 0;
+}
+
+.lab-card {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-top: 5px solid var(--accent);
+  border-radius: 8px;
+  padding: 1.3rem 1.4rem 1.5rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+  &:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08); }
+  .lab-card__letter {
+    display: inline-block;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent);
+    font-size: 1.4em;
+    margin-right: 0.35em;
+  }
+  h3 { font-size: 1.15em; margin: 0 0 0.5em; font-style: italic; display: inline; }
+  p { font-size: 0.92em; margin: 0.6em 0 0; line-height: 1.5; }
+  a.lab-card__more { font-size: 0.9em; font-weight: 600; }
+}
+
+.lab-card--amber { border-top-color: var(--amber); .lab-card__letter { color: #c9a227; } }
+.lab-card--coral { border-top-color: var(--coral); .lab-card__letter { color: #d95c5c; } }
+
+/* Highlight chips */
+.chip {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  border-radius: 999px;
+  font-size: 0.8em;
+  font-weight: 600;
+  background: var(--chip-blue);
+  color: #1f3f5c;
+  margin: 0.15em 0.3em 0.15em 0;
+}
+.chip--amber { background: var(--amber); color: #4a3b00; }
+.chip--coral { background: var(--coral); color: #4a1010; }
+
+/* Research page: lettered figure panels, like a talk slide */
+.research-theme {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 1.5rem;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border);
+  &:last-child { border-bottom: none; }
+
+  .research-theme__letter {
+    font-size: 3em;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent);
+    line-height: 1;
+  }
+  h3 { margin: 0 0 0.4em; font-style: italic; font-size: 1.35em; }
+  p { margin: 0.5em 0; }
+  ul { margin: 0.5em 0 0.5em 1.2em; line-height: 1.5; }
+  @media screen and (max-width: 576px) { grid-template-columns: 1fr; gap: 0.4rem; }
+}
+
+/* Objectives list */
+.objectives {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  counter-reset: obj;
+  li {
+    counter-increment: obj;
+    position: relative;
+    padding: 0.6em 0 0.6em 3em;
+    line-height: 1.5;
+    border-bottom: 1px dashed var(--border);
+    &::before {
+      content: counter(obj);
+      position: absolute; left: 0; top: 0.55em;
+      width: 2em; height: 2em; border-radius: 50%;
+      background: var(--amber); color: #333;
+      font-weight: 700; text-align: center; line-height: 2em;
+    }
+  }
+}
+
+/* Logos / affiliations strip */
+.affiliations {
+  display: flex; flex-wrap: wrap; gap: 1rem 2.5rem; align-items: center;
+  margin-top: 1rem;
+  .affiliation {
+    font-weight: 600; color: var(--meta); font-size: 0.95em;
+    padding: 0.6em 1em; border: 1px solid var(--border); border-radius: 6px; background: var(--background);
+  }
+}
+
+/* Members */
+.members-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.8rem;
+  margin-top: 1rem;
+}
+.member {
+  text-align: center;
+  img {
+    width: 170px; height: 170px; object-fit: cover; border-radius: 50%;
+    padding: 0; border: 4px solid var(--chip-blue); box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  }
+  h3 { font-size: 1.1em; margin: 0.8em 0 0.1em; }
+  .member__role { color: var(--accent-dark); font-size: 0.88em; font-weight: 600; }
+  .member__bio { font-size: 0.86em; line-height: 1.5; margin-top: 0.6em; text-align: left; }
+  .member__links a { font-size: 0.85em; margin: 0 0.4em; }
+}
+.member--pi { grid-column: 1 / -1; display: grid; grid-template-columns: 200px 1fr; gap: 2rem; text-align: left; align-items: center;
+  img { width: 200px; height: 200px; }
+  @media screen and (max-width: 576px) { grid-template-columns: 1fr; text-align: center; }
+}
+.alumni-list { columns: 2; column-gap: 2rem; list-style: none; padding: 0; margin-top: 0.8rem;
+  li { break-inside: avoid; padding: 0.4em 0; border-bottom: 1px dashed var(--border); font-size: 0.95em; }
+  @media screen and (max-width: 576px) { columns: 1; }
+}
+
+/* Publications */
+.pub-year { font-size: 1.3em; color: var(--accent); font-weight: 700; margin: 1.8rem 0 0.4rem; border-bottom: 2px solid var(--chip-blue); }
+.pub {
+  padding: 0.8em 0 0.8em 1em;
+  border-left: 3px solid var(--border);
+  margin: 0.6em 0;
+  font-size: 0.95em;
+  line-height: 1.5;
+  &:hover { border-left-color: var(--accent); }
+  .pub__title { font-weight: 600; }
+  .pub__authors { color: var(--text); display: block; }
+  .pub__journal { font-style: italic; }
+  .pub__links { font-size: 0.85em; margin-top: 0.2em; a { margin-right: 0.8em; } }
+  .pub__note { font-size: 0.8em; }
+}
+
+/* News teaser on home */
+.news-teasers { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.4rem; margin-top: 1rem;
+  .news-teaser {
+    background: var(--background); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.3rem;
+    .news-teaser__date { font-size: 0.8em; color: var(--meta); text-transform: uppercase; letter-spacing: 0.04em; }
+    h3 { font-size: 1.05em; margin: 0.3em 0 0.4em; }
+    p { font-size: 0.9em; line-height: 1.5; margin: 0; }
+  }
+}
+
+/* Buttons */
+.btn-lab {
+  display: inline-block; padding: 0.55em 1.3em; border-radius: 999px; font-weight: 600;
+  background: var(--accent); color: #fff !important; text-decoration: none;
+  &:hover { background: var(--accent-dark); }
+}
+.btn-lab--ghost { background: transparent; color: var(--accent-dark) !important; border: 2px solid var(--accent); &:hover { background: var(--chip-blue); } }
+
+/* Contact block */
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-top: 1rem;
+  h3 { font-size: 1.05em; margin: 0 0 0.3em; }
+  p { margin: 0; font-size: 0.95em; line-height: 1.6; }
+}
+
+/* Slimmer hero than the theme default */
+.call-out { padding-top: 12%; padding-bottom: 12%; background-position: center center !important;
+  h1 { font-size: 2.6em; letter-spacing: 0.01em; }
+  .call-out__sub { font-size: 0.95em; max-width: 720px; margin: 0.6em auto 0; opacity: 0.95; }
+}
+.home .posts { display: none; }  /* home page uses its own news teasers */
+
+/* News listing */
+.news-item {
+  display: grid; grid-template-columns: 150px 1fr; gap: 1.5rem;
+  padding: 1.4rem 0; border-bottom: 1px solid var(--border);
+  &:last-child { border-bottom: none; }
+  .news-item__date { color: var(--meta); font-size: 0.85em; text-transform: uppercase; letter-spacing: 0.04em; padding-top: 0.5em; }
+  h2 { font-size: 1.25em; margin: 0 0 0.4em; border: none; padding: 0; display: block; a { color: var(--text); } }
+  p { margin: 0 0 0.5em; font-size: 0.95em; }
+  .news-item__more { font-size: 0.9em; font-weight: 600; }
+  @media screen and (max-width: 576px) { grid-template-columns: 1fr; gap: 0.3rem; }
+}

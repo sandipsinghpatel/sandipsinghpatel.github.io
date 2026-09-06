@@ -1,0 +1,74 @@
+# ---------------------------------------------------------------------------
+# SITE CONFIGURATION
+# ---------------------------------------------------------------------------
+# Set `url` to your GitHub Pages address. For a user site the repository must
+# be named  <username>.github.io  and baseurl stays empty.
+# For a project site (repo named e.g. "lab"), set baseurl: "/lab".
+url: "https://sandipkpatel.github.io"
+baseurl: ""
+
+# ---------------------------------------------------------------------------
+# THEME-SPECIFIC CONFIGURATION  (Type on Strap, same theme as the reference site)
+# ---------------------------------------------------------------------------
+title: Patel Lab
+description: "Sandip K. Patel — quantitative proteomics, cellular senescence and healthy brain ageing. MRC Toxicology Unit, University of Cambridge."
+avatar: assets/img/logo.svg
+favicon: assets/img/favicon.svg
+
+# Text shown on the home-page hero banner
+header_text: Proteomics for healthy brain ageing
+header_feature_image: assets/img/header/hero.jpg
+header_feature_image_responsive: true
+footer_text: >
+  &copy; 2026 Sandip K. Patel &middot; MRC Toxicology Unit, University of Cambridge &middot;
+  Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+
+# Blog / news
+excerpt: true
+post_navigation: true
+color_image: /assets/img/lineart.png
+
+# Features
+katex: false
+mermaid: false
+google_analytics:
+cookie_consent: false
+color_theme: light          # auto, dark or light
+
+# Portfolio collection is not used, but kept for theme compatibility
+collections:
+  portfolio:
+    output: false
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: sandip
+      categories: [news]
+
+# ---------------------------------------------------------------------------
+# BUILD SETTINGS
+# ---------------------------------------------------------------------------
+sass:
+  style: compressed
+  quiet_deps: true
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-feed
+remote_theme: sylhare/Type-on-Strap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - preview
+  - vendor
+  - node_modules
+  - .jekyll-cache
+  - .jekyll-metadata

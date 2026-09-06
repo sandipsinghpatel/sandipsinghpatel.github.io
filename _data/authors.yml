@@ -1,0 +1,9 @@
+# Post authors. Use the key (e.g. "sandip") in a post's `author:` front matter.
+sandip:
+  name: "Sandip K. Patel"
+  avatar: "assets/img/logo.svg"
+  url: "/members/"
+lab:
+  name: "Patel Lab"
+  avatar: "assets/img/logo.svg"
+  url: "/members/"

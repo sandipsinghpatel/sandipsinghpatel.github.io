@@ -1,0 +1,15 @@
+# RSS icon in the footer and share buttons on news posts
+rss: false
+feed:
+  path: feed.xml
+
+share:
+  email: true
+  linkedin: true
+  twitter: true
+  facebook: false
+  pinterest: false
+  pocket:
+  reddit: false
+  tumblr: false
+  wordpress:

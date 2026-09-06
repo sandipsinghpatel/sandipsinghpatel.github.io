@@ -1,0 +1,153 @@
+# Publications, newest first. Author lists follow PubMed. The publications page bolds "S. K. Patel" automatically.
+# Add new entries at the top. Fields: title, authors, journal, year, volume, pages, doi, pmid, type, note
+- title: "Exosomes released from senescent cells and circulatory exosomes isolated from human plasma reveal aging-associated proteomic and lipid signatures"
+  authors: "S. K. Patel, J. Bons, J. P. Rose, J. R. Chappel, R. L. Beres, M. A. Watson, C. Webster, J. B. Burton, R. Bruderer, P. Y. Desprez, L. Reiter, J. Campisi, E. S. Baker, B. Schilling"
+  journal: "Aging"
+  year: 2025
+  volume: "17"
+  pages: "1929-1965"
+  doi: "10.18632/aging.206292"
+  pmid: "40748658"
+  type: Research article
+  note: "First author"
+
+- title: "Senescent characteristics of human corneal endothelial cells upon ultraviolet-A exposure"
+  authors: "K. Numa, S. K. Patel, Z. A. Zhang, J. B. Burton, A. Matsumoto, J. B. Hughes, C. Sotozono, B. Schilling, P. Y. Desprez, J. Campisi, K. Kitazawa"
+  journal: "Aging"
+  year: 2024
+  volume: "16"
+  pages: "6673-6693"
+  doi: "10.18632/aging.205761"
+  pmid: "38683123"
+  type: Research article
+
+- title: "Cellular senescence exacerbates features of aging in the eyes"
+  authors: "K. Kitazawa, K. Numa, S. K. Patel, C. D. King, A. Matsumoto, C. Sotozono, P. Y. Desprez, B. Schilling, J. Campisi"
+  journal: "Aging Biology"
+  year: 2023
+  volume: "1"
+  doi: "10.59368/agingbio.20230014"
+  pmid: "39239324"
+  type: Research article
+
+- title: "Senescent Schwann cells induced by aging and chronic denervation impair axonal regeneration following peripheral nerve injury"
+  authors: "A. Fuentes-Flores, C. Geronimo-Olvera, K. Girardi, D. Necuñir-Ibarra, S. K. Patel, J. Bons, M. C. Wright, D. Geschwind, A. Hoke, J. A. Gomez-Sanchez, B. Schilling, D. L. Rebolledo, J. Campisi, F. A. Court"
+  journal: "EMBO Molecular Medicine"
+  year: 2023
+  volume: "15"
+  pages: "e17907"
+  doi: "10.15252/emmm.202317907"
+  pmid: "37860842"
+  type: Research article
+
+- title: "Deep coverage and quantification of the bone proteome provides enhanced opportunities for new discoveries in skeletal biology and disease"
+  authors: "J. P. Rose, C. A. Schurman, C. D. King, J. Bons, S. K. Patel, J. B. Burton, A. O'Broin, T. Alliston, B. Schilling"
+  journal: "PLoS ONE"
+  year: 2023
+  volume: "18"
+  pages: "e0292268"
+  doi: "10.1371/journal.pone.0292268"
+  pmid: "37816044"
+  type: Research article
+
+- title: "Extracellular Nicotinamide Phosphoribosyltransferase Is a Component of the Senescence-Associated Secretory Phenotype"
+  authors: "C. Kuehnemann, K. Q. Hu, K. Butera, S. K. Patel, J. Bons, B. Schilling, C. Aguayo-Mazzucato, C. D. Wiley"
+  journal: "Frontiers in Endocrinology"
+  year: 2022
+  volume: "13"
+  pages: "935106"
+  doi: "10.3389/fendo.2022.935106"
+  pmid: "35909566"
+  type: Research article
+
+- title: "MicroRNA sequence codes for small extracellular vesicle release and cellular retention"
+  authors: "R. Garcia-Martin, G. Wang, B. B. Brandão, T. M. Zanotto, S. Shah, S. K. Patel, B. Schilling, C. R. Kahn"
+  journal: "Nature"
+  year: 2022
+  volume: "601"
+  pages: "446-451"
+  doi: "10.1038/s41586-021-04234-3"
+  pmid: "34937935"
+  type: Research article
+
+- title: "Artificial Intelligence to Decode Cancer Mechanism: Beyond Patient Stratification for Precision Oncology"
+  authors: "S. K. Patel, B. George, V. Rai"
+  journal: "Frontiers in Pharmacology"
+  year: 2020
+  volume: "11"
+  pages: "1177"
+  doi: "10.3389/fphar.2020.01177"
+  pmid: "32903628"
+  type: Review
+  note: "First author"
+
+- title: "Rapid Discrimination of Malaria- and Dengue-Infected Patients Sera Using Raman Spectroscopy"
+  authors: "S. K. Patel, N. Rajora, S. Kumar, A. Sahu, S. K. Kochar, C. M. Krishna, S. Srivastava"
+  journal: "Analytical Chemistry"
+  year: 2019
+  volume: "91"
+  pages: "7054-7062"
+  doi: "10.1021/acs.analchem.8b05907"
+  pmid: "31033270"
+  type: Research article
+  note: "First author"
+
+- title: "Clinical Proteomics and Cytokine Profiling for Dengue Fever Disease Severity Biomarkers"
+  authors: "M. Jadhav, M. Nayak, S. Kumar, A. Venkatesh, S. K. Patel, V. Kumar, S. Sharma, B. Samanta, S. Deb, A. Karak, S. Verma, A. Talukdar, S. K. Kochar, P. Mansukhani, M. Gandhi, S. Srivastava"
+  journal: "OMICS: A Journal of Integrative Biology"
+  year: 2017
+  volume: "21"
+  pages: "665-677"
+  doi: "10.1089/omi.2017.0135"
+  pmid: "29091011"
+  type: Research article
+
+- title: "A Proteogenomic Analysis of Haptoglobin in Malaria"
+  authors: "G. Awasthi, S. Tyagi, V. Kumar, S. K. Patel, D. Rojh, V. Sakrappanavar, S. K. Kochar, A. Talukdar, B. Samanta, A. Das, S. Srivastava, S. Patankar"
+  journal: "Proteomics – Clinical Applications"
+  year: 2017
+  volume: "12"
+  pages: "e1700077"
+  doi: "10.1002/prca.201700077"
+  pmid: "28960920"
+  type: Research article
+
+- title: "Quantitative Proteomics Analysis of Plasmodium vivax Induced Alterations in Human Serum during the Acute and Convalescent Phases of Infection"
+  authors: "S. Ray, S. K. Patel, A. Venkatesh, G. Chatterjee, N. N. Ansari, N. J. Gogtay, U. M. Thatte, P. Gandhe, S. G. Varma, S. Patankar, S. Srivastava"
+  journal: "Scientific Reports"
+  year: 2017
+  volume: "7"
+  pages: "4400"
+  doi: "10.1038/s41598-017-04447-5"
+  pmid: "28667326"
+  type: Research article
+
+- title: "Proteomics of Plasmodium vivax malaria: new insights, progress and potential"
+  authors: "A. Venkatesh, S. K. Patel, S. Ray, J. Shastri, G. Chatterjee, S. K. Kochar, S. Patankar, S. Srivastava"
+  journal: "Expert Review of Proteomics"
+  year: 2016
+  volume: "13"
+  pages: "771-82"
+  doi: "10.1080/14789450.2016.1210515"
+  pmid: "27389635"
+  type: Review
+
+- title: "Clinicopathological Analysis and Multipronged Quantitative Proteomics Reveal Oxidative Stress and Cytoskeletal Proteins as Possible Markers for Severe Vivax Malaria"
+  authors: "S. Ray, S. K. Patel, A. Venkatesh, A. Bhave, V. Kumar, V. Singh, G. Chatterjee, V. G. Shah, S. Sharma, D. Renu, N. Nafis, P. Gandhe, N. Gogtay, U. Thatte, K. Sehgal, S. Verma, A. Karak, D. Khanra, A. Talukdar, S. K. Kochar, V. S B, D. K. Kochar, D. Rojh, S. G. Varma, M. N. Gandhi, R. Srikanth, S. Patankar, S. Srivastava"
+  journal: "Scientific Reports"
+  year: 2016
+  volume: "6"
+  pages: "24557"
+  doi: "10.1038/srep24557"
+  pmid: "27090372"
+  type: Research article
+
+- title: "Differential expression of serum/plasma proteins in various infectious diseases: specific or nonspecific signatures"
+  authors: "S. Ray, S. K. Patel, V. Kumar, J. Damahe, S. Srivastava"
+  journal: "Proteomics – Clinical Applications"
+  year: 2013
+  volume: "8"
+  pages: "53-72"
+  doi: "10.1002/prca.201300074"
+  pmid: "24293340"
+  type: Review
