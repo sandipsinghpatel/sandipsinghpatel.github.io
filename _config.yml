@@ -4,7 +4,7 @@
 # Set `url` to your GitHub Pages address. For a user site the repository must
 # be named  <username>.github.io  and baseurl stays empty.
 # For a project site (repo named e.g. "lab"), set baseurl: "/lab".
-url: "https://sandipkpatel.github.io"
+url: "https://sandipsinghpatel.github.io"
 baseurl: ""
 
 # ---------------------------------------------------------------------------

@@ -7,7 +7,7 @@ Pages: Home · Research · Publications · Members · News · Join Us.
 ## Publish on GitHub Pages (about ten minutes)
 
 1. On GitHub, create a **public** repository named `<your-username>.github.io`
-   (for example `sandipkpatel.github.io`). This makes the site live at
+   (for example `sandipsinghpatel.github.io`). This makes the site live at
    `https://<your-username>.github.io/` with no further path.
 2. Upload the contents of this folder to the repository (drag-and-drop in the browser,
    or `git init && git add . && git commit -m "Lab website" && git push`).
