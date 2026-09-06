@@ -1,5 +1,25 @@
-# Publications, newest first. Author lists follow PubMed. The publications page bolds "S. K. Patel" automatically.
-# Add new entries at the top. Fields: title, authors, journal, year, volume, pages, doi, pmid, type, note
+# Publications, newest first. Verified against PubMed and Google Scholar (profile rMNar0IAAAAJ).
+# The publications page bolds "S. K. Patel" automatically and groups entries by year.
+# Fields: title, authors, journal, year, volume, pages, doi, pmid, type, note
+# type: Research article | Review | Preprint | Book chapter | Conference paper
+#
+# NOTE: author lists for the two 2026 bioRxiv preprints are truncated as Google Scholar
+# displays them — please complete them before you next push.
+
+- title: "Network-scale disruption of RNA–protein interactions by a bioaccumulating small-molecule drug"
+  authors: "X. Jiang, S. Mozzachiodi, I. Roux, M. Makwana, W. Zhou, E. Villanueva, et al."
+  journal: "bioRxiv"
+  year: 2026
+  doi: "10.1101/2026.07.23.740326"
+  type: Preprint
+
+- title: "Laboratory evolution enhances resilience of a symbiont yeast and its honeybee host against agrochemical exposure"
+  authors: "S. Mozzachiodi, F. Di Cesare, S. Kamrad, X. Jiang, D. Scheidweiler, J. Rogan, et al."
+  journal: "bioRxiv"
+  year: 2026
+  doi: "10.1101/2026.07.10.737698"
+  type: Preprint
+
 - title: "Exosomes released from senescent cells and circulatory exosomes isolated from human plasma reveal aging-associated proteomic and lipid signatures"
   authors: "S. K. Patel, J. Bons, J. P. Rose, J. R. Chappel, R. L. Beres, M. A. Watson, C. Webster, J. B. Burton, R. Bruderer, P. Y. Desprez, L. Reiter, J. Campisi, E. S. Baker, B. Schilling"
   journal: "Aging"
@@ -10,6 +30,9 @@
   pmid: "40748658"
   type: Research article
   note: "First author"
+  featured: true
+  accent: purple
+  tags: [Extracellular vesicles, Senescence, Plasma biomarkers, DIA]
 
 - title: "Senescent characteristics of human corneal endothelial cells upon ultraviolet-A exposure"
   authors: "K. Numa, S. K. Patel, Z. A. Zhang, J. B. Burton, A. Matsumoto, J. B. Hughes, C. Sotozono, B. Schilling, P. Y. Desprez, J. Campisi, K. Kitazawa"
@@ -39,6 +62,9 @@
   doi: "10.15252/emmm.202317907"
   pmid: "37860842"
   type: Research article
+  featured: true
+  accent: coral
+  tags: [Senescence, Nervous system, Regeneration]
 
 - title: "Deep coverage and quantification of the bone proteome provides enhanced opportunities for new discoveries in skeletal biology and disease"
   authors: "J. P. Rose, C. A. Schurman, C. D. King, J. Bons, S. K. Patel, J. B. Burton, A. O'Broin, T. Alliston, B. Schilling"
@@ -49,6 +75,13 @@
   doi: "10.1371/journal.pone.0292268"
   pmid: "37816044"
   type: Research article
+
+- title: "Metabolomics of Food Systems"
+  authors: "S. K. Patel, B. George, N. Jain, V. Rai"
+  journal: "Sustainable Agriculture Reviews 59: Animal Biotechnology for Livestock Production (Springer)"
+  year: 2023
+  type: Book chapter
+  note: "First author"
 
 - title: "Extracellular Nicotinamide Phosphoribosyltransferase Is a Component of the Senescence-Associated Secretory Phenotype"
   authors: "C. Kuehnemann, K. Q. Hu, K. Butera, S. K. Patel, J. Bons, B. Schilling, C. Aguayo-Mazzucato, C. D. Wiley"
@@ -69,6 +102,18 @@
   doi: "10.1038/s41586-021-04234-3"
   pmid: "34937935"
   type: Research article
+  featured: true
+  accent: purple
+  tags: [Extracellular vesicles, RNA sorting, Proteomics]
+
+- title: "Systematic metabolome profiling and multi-omics analysis of the nitrogen-limited non-model oleaginous algae for biorefining"
+  authors: "V. Rai, S. K. Patel, M. Muthuraj, M. N. Gandhi, D. Das, S. Srivastava"
+  journal: "Biofuel Research Journal"
+  year: 2021
+  volume: "8"
+  pages: "1330-1341"
+  doi: "10.18331/BRJ2021.8.1.5"
+  type: Research article
 
 - title: "Artificial Intelligence to Decode Cancer Mechanism: Beyond Patient Stratification for Precision Oncology"
   authors: "S. K. Patel, B. George, V. Rai"
@@ -81,6 +126,16 @@
   type: Review
   note: "First author"
 
+- title: "The power of proteomics to monitor senescence-associated secretory phenotypes and beyond: toward clinical applications"
+  authors: "N. Basisty, A. Kale, S. K. Patel, J. Campisi, B. Schilling"
+  journal: "Expert Review of Proteomics"
+  year: 2020
+  volume: "17"
+  pages: "297-308"
+  doi: "10.1080/14789450.2020.1766976"
+  pmid: "32425074"
+  type: Review
+
 - title: "Rapid Discrimination of Malaria- and Dengue-Infected Patients Sera Using Raman Spectroscopy"
   authors: "S. K. Patel, N. Rajora, S. Kumar, A. Sahu, S. K. Kochar, C. M. Krishna, S. Srivastava"
   journal: "Analytical Chemistry"
@@ -91,6 +146,9 @@
   pmid: "31033270"
   type: Research article
   note: "First author"
+  featured: true
+  accent: green
+  tags: [Translational, Raman spectroscopy, Diagnostics]
 
 - title: "Clinical Proteomics and Cytokine Profiling for Dengue Fever Disease Severity Biomarkers"
   authors: "M. Jadhav, M. Nayak, S. Kumar, A. Venkatesh, S. K. Patel, V. Kumar, S. Sharma, B. Samanta, S. Deb, A. Karak, S. Verma, A. Talukdar, S. K. Kochar, P. Mansukhani, M. Gandhi, S. Srivastava"
@@ -122,6 +180,12 @@
   pmid: "28667326"
   type: Research article
 
+- title: "Basics of Mass Spectrometry and Its Applications in Biomarker Discovery"
+  authors: "P. J. Reddy, K. Gollapalli, S. Ghantasala, T. Das, S. K. Patel, V. Chanukuppa, S. Rapole, S. Srivastava"
+  journal: "Biomarker Discovery in the Developing World: Dissecting the Pipeline for Meeting the Challenges (Springer)"
+  year: 2016
+  type: Book chapter
+
 - title: "Proteomics of Plasmodium vivax malaria: new insights, progress and potential"
   authors: "A. Venkatesh, S. K. Patel, S. Ray, J. Shastri, G. Chatterjee, S. K. Kochar, S. Patankar, S. Srivastava"
   journal: "Expert Review of Proteomics"
@@ -141,6 +205,16 @@
   doi: "10.1038/srep24557"
   pmid: "27090372"
   type: Research article
+
+- title: "Metabolomics and its integration with systems biology: PSI 2014 conference panel discussion report"
+  authors: "T. More, S. RoyChoudhury, K. Gollapalli, S. K. Patel, H. Gowda, K. Chaudhury, S. Rapole"
+  journal: "Journal of Proteomics"
+  year: 2015
+  volume: "127"
+  pages: "73-79"
+  doi: "10.1016/j.jprot.2015.04.024"
+  pmid: "25943869"
+  type: Review
 
 - title: "Differential expression of serum/plasma proteins in various infectious diseases: specific or nonspecific signatures"
   authors: "S. Ray, S. K. Patel, V. Kumar, J. Damahe, S. Srivastava"

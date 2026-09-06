@@ -1,0 +1,51 @@
+# Datasets, code and protocols shown on /resources/.
+# Add entries here — the page builds itself from this file.
+#
+# TO COMPLETE: fill in the real PRIDE/ProteomeXchange accessions and GitHub URLs.
+# Each paper you publish should gain an entry here at the same time.
+
+datasets:
+  - title: "Senescent-cell and circulating exosome proteomes"
+    description: "DIA proteomics and lipidomics of extracellular vesicles from senescent human cells and from human plasma, supporting Patel et al., Aging 2025."
+    repository: "PRIDE / ProteomeXchange"
+    accession: "Accession to be added"
+    url:
+
+  - title: "Bone proteome resource"
+    description: "Deep quantitative proteome of bone tissue, supporting Rose et al., PLoS ONE 2023."
+    repository: "PRIDE / ProteomeXchange"
+    accession: "Accession to be added"
+    url:
+
+  - title: "Senescent Schwann cell secretome"
+    description: "Proteomic profiling of senescent Schwann cells in ageing and chronic denervation, supporting Fuentes-Flores et al., EMBO Molecular Medicine 2023."
+    repository: "PRIDE / ProteomeXchange"
+    accession: "Accession to be added"
+    url:
+
+code:
+  - title: "DIA analysis workflow"
+    description: "R pipeline for differential abundance, quality control and figure generation from Spectronaut and DIA-NN output."
+    repository: "GitHub"
+    url:
+
+  - title: "EV proteomics processing"
+    description: "Scripts for filtering, normalisation and marker-based quality assessment of extracellular-vesicle proteomes."
+    repository: "GitHub"
+    url:
+
+protocols:
+  - title: "Extracellular-vesicle isolation for proteomics"
+    description: "Isolation from conditioned medium and plasma, with the quality-control markers we require before mass spectrometry."
+    repository: "protocols.io"
+    url:
+
+  - title: "Low-input sample preparation"
+    description: "Single-pot preparation for sorted cells and microdissected tissue, optimised for FAIMS-assisted DIA."
+    repository: "protocols.io"
+    url:
+
+  - title: "Secretome collection from cultured cells"
+    description: "Serum-free conditioning, concentration and clean-up for SASP profiling."
+    repository: "protocols.io"
+    url:

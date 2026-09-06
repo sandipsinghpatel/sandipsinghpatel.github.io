@@ -25,6 +25,13 @@ feature-img: "assets/img/header/research.jpg"
     mechanism remains a correlation.
   </p>
 
+  <figure class="figure-block">
+    <img src="{{ '/assets/img/figures/programme.jpg' | relative_url }}"
+         alt="Illustration of the research programme from senescent cells through extracellular vesicles and neural cells to brain ageing and plasma biomarkers."
+         width="1600" height="900" loading="lazy">
+    <figcaption><strong>Research vision.</strong> Senescent cells release SASP factors and extracellular vesicles that act on neurons and glia, driving neuroinflammation and brain ageing, and leaving measurable traces in blood. Quantitative proteomics spans every level.</figcaption>
+  </figure>
+
   <h2>Objectives</h2>
   <ol class="objectives">
     <li>Define the proteomic and lipidomic cargo of senescent-cell extracellular vesicles, and establish which components are detectable in human plasma as markers of biological age.</li>
@@ -35,7 +42,19 @@ feature-img: "assets/img/header/research.jpg"
 </div>
 
 <div class="lab-section lab-section--tint">
-  <h2>Research themes</h2>
+  <h2>Experimental platform</h2>
+  <figure class="figure-block">
+    <img src="{{ '/assets/img/figures/workflow.jpg' | relative_url }}"
+         alt="Illustration of the proteomics workflow: cell, brain, plasma and vesicle samples enter automated preparation and mass spectrometry, producing spectra, heat maps and networks that yield biological insight."
+         width="1600" height="900" loading="lazy">
+    <figcaption><strong>Proteomics platform.</strong> Samples — cells, tissue, plasma and vesicles — through automated preparation and mass spectrometry to quantitative analysis and biological interpretation.</figcaption>
+  </figure>
+  <figure class="figure-block">
+    {% include schematic-pipeline.html %}
+    <figcaption><strong>From mechanism to intervention.</strong> Every project follows the same four stages, from unbiased discovery through cell-type resolution and orthogonal validation to translation.</figcaption>
+  </figure>
+
+  <h2 style="margin-top:2.4rem">Research themes</h2>
 
   <div class="research-theme" id="theme-a">
     <div class="research-theme__letter">A.</div>
@@ -76,6 +95,12 @@ feature-img: "assets/img/header/research.jpg"
         Reporter-guided screening then lets us ask whether senolytic or senomorphic compounds, or targeted
         recombinant small-EV delivery, can restore homeostasis in the cells that matter.
       </p>
+      <figure class="theme-figure">
+        <img src="{{ '/assets/img/figures/crosstalk.jpg' | relative_url }}"
+             alt="Illustration of senescent cells releasing extracellular vesicles that signal to neurons, astrocytes and microglia, propagating change through the ageing brain."
+             width="1600" height="900" loading="lazy">
+        <figcaption><strong>Neuron–glia crosstalk.</strong> Senescent cells and their vesicles act on neurons, astrocytes and microglia; we profile each population separately rather than in bulk.</figcaption>
+      </figure>
       <span class="chip">hiPSC neurons &amp; glia</span><span class="chip">3D organoids</span><span class="chip chip--amber">Secretomics</span><span class="chip chip--coral">Neuroinflammation</span>
     </div>
   </div>
@@ -88,7 +113,7 @@ feature-img: "assets/img/header/research.jpg"
         The most interesting questions in ageing biology tend to involve the least material: sorted glial
         populations, micro-dissected tissue, vesicles from a few millilitres of plasma. Much of our
         methodological work is therefore about sensitivity and reproducibility at low input — DIA methods
-        on Orbitrap Exploris 480 and Fusion platforms, careful quality control across long acquisition
+        on an Orbitrap Eclipse Tribrid with FAIMS Pro, careful quality control across long acquisition
         series, and workflows for secretomics, surface-omics, post-translational-modification profiling and
         thermal-proteome profiling.
       </p>
@@ -116,6 +141,12 @@ feature-img: "assets/img/header/research.jpg"
         comparisons of affinity-based platforms with mass spectrometry for clinical proteomics — a
         contextual assessment of what each technology can and cannot deliver, rather than a ranking.
       </p>
+      <figure class="theme-figure">
+        <img src="{{ '/assets/img/figures/translation.jpg' | relative_url }}"
+             alt="Illustration of brain ageing signals appearing as plasma and extracellular-vesicle biomarkers, measured by mass spectrometry and carried through to clinical translation."
+             width="1600" height="900" loading="lazy">
+        <figcaption><strong>From brain to blood.</strong> Signals released by the ageing brain become measurable in plasma and circulating vesicles — the route from mechanism to a test, and to intervention.</figcaption>
+      </figure>
       <span class="chip">Plasma proteomics</span><span class="chip">Raman spectroscopy</span><span class="chip chip--amber">Affinity vs MS</span><span class="chip chip--coral">Clinical cohorts</span>
     </div>
   </div>

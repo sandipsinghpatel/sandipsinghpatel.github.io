@@ -1,0 +1,66 @@
+---
+layout: page
+title: Resources
+subtitle: Datasets, code and protocols
+permalink: /resources/
+position: 5
+feature-img: "assets/img/header/publications.jpg"
+---
+<!-- Data & open science (review comment 10). Entries live in _data/resources.yml
+     so they can be added without touching this page. -->
+
+<div class="lab-section" style="padding-top:1.5rem">
+  <p class="lab-intro__lead">
+    Proteomics is only reusable if the data, the methods and the code travel with the paper. Everything we
+    publish is deposited in public repositories, and the analysis workflows behind our figures are shared
+    openly wherever licence and consent allow.
+  </p>
+
+  <h2>Datasets</h2>
+  <p class="section-intro">Raw and processed mass-spectrometry data deposited to ProteomeXchange via PRIDE.</p>
+  <div class="resource-cards">
+    {% for r in site.data.resources.datasets %}
+    <div class="resource-card">
+      <span class="resource-card__tag">{{ r.repository }}</span>
+      <h3>{{ r.title }}</h3>
+      <p>{{ r.description }}</p>
+      {% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.accession | default: 'View dataset' }} →</a>
+      {% else %}<span style="font-size:0.85em;color:var(--meta)">{{ r.accession }}</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2 style="margin-top:2.6rem">Code &amp; workflows</h2>
+  <div class="resource-cards">
+    {% for r in site.data.resources.code %}
+    <div class="resource-card">
+      <span class="resource-card__tag">{{ r.repository }}</span>
+      <h3>{{ r.title }}</h3>
+      <p>{{ r.description }}</p>
+      {% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener">View repository →</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <h2 style="margin-top:2.6rem">Protocols</h2>
+  <div class="resource-cards">
+    {% for r in site.data.resources.protocols %}
+    <div class="resource-card">
+      <span class="resource-card__tag">{{ r.repository }}</span>
+      <h3>{{ r.title }}</h3>
+      <p>{{ r.description }}</p>
+      {% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener">Open protocol →</a>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="lab-section lab-section--tint">
+  <h2>Requesting data</h2>
+  <p>
+    If a dataset you need is not yet public, or you would like the processed matrices, spectral libraries or
+    analysis scripts behind a particular figure, email
+    <a href="mailto:skp59@cam.ac.uk">skp59@cam.ac.uk</a> and we will share what we can. Clinical datasets are
+    shared within the limits of the consent and ethical approval under which they were collected.
+  </p>
+</div>

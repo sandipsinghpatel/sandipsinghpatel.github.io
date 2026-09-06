@@ -20,8 +20,14 @@ header_text: Proteomics for healthy brain ageing
 header_feature_image: assets/img/header/hero.jpg
 header_feature_image_responsive: true
 footer_text: >
-  &copy; 2026 Sandip K. Patel &middot; MRC Toxicology Unit, University of Cambridge &middot;
-  Built with <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+  <strong>Patel Lab</strong> &middot; MRC Toxicology Unit, University of Cambridge &middot;
+  Gleeson Building, Tennis Court Road, Cambridge CB2 1QR<br>
+  <a href="mailto:skp59@cam.ac.uk">skp59@cam.ac.uk</a> &middot;
+  <a href="https://scholar.google.com/citations?user=rMNar0IAAAAJ&amp;hl=en">Google Scholar</a> &middot;
+  <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Patel+SK%5BAuthor%5D">PubMed</a> &middot;
+  <a href="https://www.mrc-tox.cam.ac.uk/">MRC Toxicology Unit</a><br>
+  &copy; 2026 Sandip K. Patel &middot; Built with <a href="https://jekyllrb.com/">Jekyll</a> and
+  <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
 # Blog / news
 excerpt: true
