@@ -1,18 +1,22 @@
-# Team members. Photos go in assets/img/members/ (square images work best, ~400x400 px).
+# Team members. Photos go in assets/img/members/ (square images work best, ~800x800 px).
 # Delete the placeholder entries and add real people. Alumni are listed at the bottom.
 
 current:
   - name: Dr Sandip Kumar Patel
-    role: Principal Investigator · Director, Proteomics Facility
+    role: Group Leader · Director, Proteomics Facility
     photo: assets/img/members/sandip.jpg
     email: skp59@cam.ac.uk
     bio: >
-      Sandip trained in quantitative proteomics and clinical biomarker discovery at IIT Bombay
-      (integrated M.Sc.–Ph.D.), then joined the Buck Institute for Research on Aging as a Glenn
-      Postdoctoral Fellow, where he studied cellular senescence and extracellular vesicles.
-      Since 2023 he has directed the Proteomics Facility at the MRC Toxicology Unit, University
-      of Cambridge, where his research focuses on healthy brain ageing, senescence-driven
-      neuroinflammation and extracellular-vesicle therapeutics.
+      Sandip trained in quantitative proteomics and clinical biomarker discovery at IIT Bombay, where his
+      integrated M.Sc.–Ph.D. work used proteomics and metabolomics to dissect the pathogenesis of severe
+      vivax malaria. He then joined the Buck Institute for Research on Aging in California as a Glenn
+      Postdoctoral Fellow (2019–2023), working on cellular senescence, the senescence-associated secretory
+      phenotype and extracellular vesicles. Since 2023 he has directed the Proteomics Facility at the MRC
+      Toxicology Unit, University of Cambridge, where his research connects senescence and
+      extracellular-vesicle biology to healthy brain ageing and neuroinflammation. He has published in
+      Nature, Aging, EMBO Molecular Medicine and Analytical Chemistry, reviews for Nature Communications,
+      and serves as a Reviewer Editor for Frontiers in Molecular Biosciences. He also runs Bio-info, a
+      YouTube channel of short scientific explainers, for which he received a Bronze SciComm Star award.
     links:
       - label: Google Scholar
         url: https://scholar.google.com/
@@ -23,8 +27,8 @@ current:
     role: Postdoctoral Research Associate
     photo: assets/img/members/placeholder.svg
     bio: >
-      Placeholder — replace with a short biography (two or three sentences on background,
-      current project and technique focus).
+      Placeholder — replace with two or three sentences: where they trained, what they work on here, and
+      the techniques they lead on.
 
   - name: PhD Student
     role: PhD Student

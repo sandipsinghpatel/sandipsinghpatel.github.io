@@ -9,21 +9,28 @@ feature-img: "assets/img/header/research.jpg"
 
 <div class="lab-section" style="padding-top:0">
   <p class="lab-intro__lead">
-    Ageing is the strongest risk factor for neurodegenerative disease, yet the molecular events that turn a
-    healthy old brain into a diseased one remain poorly resolved. Senescent cells accumulate with age and secrete
-    a complex mixture of proteins, lipids and extracellular vesicles (the senescence-associated secretory
-    phenotype, SASP) that inflames tissue and disrupts neighbouring cells. Our laboratory uses quantitative
-    mass-spectrometry proteomics as a common language to connect these processes across scales: single proteins
-    and their modifications, the vesicles that carry them, the cells that release them, and the plasma of the
-    people in whom we hope to detect and modify them.
+    Ageing is the single strongest risk factor for neurodegenerative disease, yet we still cannot say
+    with confidence which molecular events separate a healthy old brain from a diseased one. Our work
+    starts from a specific suspect: the senescent cell. Cells that have permanently withdrawn from the
+    cell cycle accumulate with age and, far from being inert, secrete a complex mixture of proteins,
+    lipids and extracellular vesicles — the senescence-associated secretory phenotype, or SASP — that
+    inflames the surrounding tissue and alters the behaviour of healthy neighbours.
+  </p>
+  <p>
+    Quantitative mass-spectrometry proteomics is the common language we use to follow that process
+    across scales. The same measurement principle lets us ask what a single senescent cell secretes,
+    what its vesicles carry, how a recipient neuron or glial cell responds, and whether any of it can
+    be detected in a tube of human plasma. Working across those scales in one laboratory is the point:
+    a mechanism that cannot be measured in people remains a hypothesis, and a blood marker without a
+    mechanism remains a correlation.
   </p>
 
   <h2>Objectives</h2>
   <ol class="objectives">
-    <li>Define the proteomic and lipidomic cargo of senescent-cell extracellular vesicles and establish which components are detectable in human plasma as markers of biological age.</li>
-    <li>Map how senescent astrocytes, microglia and neurons remodel the ageing brain proteome and drive neuroinflammation relevant to Alzheimer's disease.</li>
-    <li>Build human-relevant models — hiPSC-derived neural cells and 3D organoids — to test senolytic, senomorphic and vesicle-based interventions.</li>
-    <li>Develop and share proteomics workflows (DIA, low-input, PTM and thermal-proteome profiling) and analysis tools that make these questions tractable for the wider community.</li>
+    <li>Define the proteomic and lipidomic cargo of senescent-cell extracellular vesicles, and establish which components are detectable in human plasma as markers of biological age.</li>
+    <li>Map how senescent astrocytes, microglia and neurons remodel the ageing brain proteome, and identify the crosstalk that drives chronic neuroinflammation in Alzheimer's disease.</li>
+    <li>Build human-relevant models — hiPSC-derived neural cells and 3D organoids — in which senolytic, senomorphic and vesicle-based interventions can be tested with cell-type resolution.</li>
+    <li>Develop and share the proteomics workflows this demands: data-independent acquisition, low-input and single-cell methods, surface-omics, secretomics and thermal-proteome profiling.</li>
   </ol>
 </div>
 
@@ -35,11 +42,18 @@ feature-img: "assets/img/header/research.jpg"
     <div>
       <h3>Cellular senescence, the SASP and extracellular vesicles</h3>
       <p>
-        Senescent cells communicate with their environment through soluble factors and through extracellular
-        vesicles (EVs) that package proteins, lipids and nucleic acids. Using DIA proteomics and lipidomics we
-        have characterised the EV cargo released by senescent human cells and shown that circulating exosomes from
-        older adults carry overlapping, age-associated signatures. We are now asking which of these cargo proteins
-        are causal — altering recipient-cell behaviour — and which are simply informative as biomarkers.
+        Senescent cells speak to their environment through soluble factors and through extracellular
+        vesicles (EVs) that package proteins, lipids and nucleic acids. Using data-independent-acquisition
+        proteomics together with lipidomics, we characterised the vesicles released by senescent human
+        cells and compared them with circulating exosomes isolated from the plasma of younger and older
+        adults. A shared, age-associated signature emerged across the two — evidence that vesicle cargo
+        is both a route by which senescence propagates and an accessible readout of it.
+      </p>
+      <p>
+        The open questions are causal ones. Which cargo proteins actually change recipient-cell behaviour,
+        and which are merely along for the ride? Does the vesicle surface determine which cells receive
+        the message? We approach these with engineered vesicles, cargo depletion, and surface-omics of
+        both donor and recipient populations.
       </p>
       <span class="chip">DIA-MS</span><span class="chip">Lipidomics</span><span class="chip chip--amber">Exosomes</span><span class="chip chip--coral">SASP</span>
     </div>
@@ -50,11 +64,17 @@ feature-img: "assets/img/header/research.jpg"
     <div>
       <h3>Healthy brain ageing, neuroinflammation and Alzheimer's disease</h3>
       <p>
-        Glial senescence is an emerging driver of the chronic neuroinflammation that precedes neurodegeneration.
-        We combine mouse brain proteomics across the lifespan with hiPSC-derived neurons, astrocytes and microglia
-        to ask how senescent glia change the neuronal proteome, secretome and cell surface, and whether removing or
-        reprogramming those cells restores homeostasis. A five-year programme on senescence-driven
-        neuroinflammation in Alzheimer's disease underpins this theme.
+        Glial senescence is emerging as a driver of the chronic, low-grade neuroinflammation that precedes
+        overt neurodegeneration. Our five-year programme on senescence-driven neuroinflammation centres on
+        microglia–astrocyte crosstalk: which cell type senesces first, what each secretes, and how that
+        exchange tips a resilient brain into a vulnerable one.
+      </p>
+      <p>
+        The experimental strategy is deliberately cell-type-resolved. We combine mouse brain proteomics
+        across the lifespan with human iPSC-derived neurons, astrocytes and microglia, profiling the
+        proteome, the secretome and the cell surface of each population separately rather than in bulk.
+        Reporter-guided screening then lets us ask whether senolytic or senomorphic compounds, or targeted
+        recombinant small-EV delivery, can restore homeostasis in the cells that matter.
       </p>
       <span class="chip">hiPSC neurons &amp; glia</span><span class="chip">3D organoids</span><span class="chip chip--amber">Secretomics</span><span class="chip chip--coral">Neuroinflammation</span>
     </div>
@@ -63,15 +83,21 @@ feature-img: "assets/img/header/research.jpg"
   <div class="research-theme" id="theme-c">
     <div class="research-theme__letter">C.</div>
     <div>
-      <h3>Proteomics technology development and data science</h3>
+      <h3>Proteomics technology and data science</h3>
       <p>
-        Many of the most interesting questions in ageing biology involve small, precious samples — sorted cell
-        populations, micro-dissected tissue, vesicles. We develop low-input and single-cell proteomics methods,
-        post-translational-modification and thermal-proteome profiling workflows, and reproducible quality-control
-        pipelines on Orbitrap Exploris 480 and Fusion platforms. On the computational side we apply machine
-        learning to integrate proteomic and metabolomic data at the pathway level.
+        The most interesting questions in ageing biology tend to involve the least material: sorted glial
+        populations, micro-dissected tissue, vesicles from a few millilitres of plasma. Much of our
+        methodological work is therefore about sensitivity and reproducibility at low input — DIA methods
+        on Orbitrap Exploris 480 and Fusion platforms, careful quality control across long acquisition
+        series, and workflows for secretomics, surface-omics, post-translational-modification profiling and
+        thermal-proteome profiling.
       </p>
-      <span class="chip">Low-input / single-cell</span><span class="chip">PTM profiling</span><span class="chip chip--amber">Thermal proteome profiling</span><span class="chip chip--coral">AI / ML</span>
+      <p>
+        On the computational side we integrate proteomic and metabolomic data at the pathway level and use
+        machine learning where it earns its place — for feature selection and pattern recognition across
+        modalities, rather than as a substitute for experimental validation.
+      </p>
+      <span class="chip">Low-input / single-cell</span><span class="chip">PTM profiling</span><span class="chip chip--amber">Thermal proteome profiling</span><span class="chip chip--coral">AI / ML integration</span>
     </div>
   </div>
 
@@ -80,11 +106,15 @@ feature-img: "assets/img/header/research.jpg"
     <div>
       <h3>Translational biomarkers — from infectious disease to ageing</h3>
       <p>
-        Our biomarker work began with clinical proteomics of severe vivax malaria and dengue in Indian cohorts,
-        including a Raman-spectroscopy classifier that discriminates malaria- and dengue-infected sera. The same
-        discipline — careful cohorts, orthogonal validation and honest statistics — now guides our search for
-        plasma and EV-based markers of biological age, and our comparisons of affinity (SomaScan, Olink) and
-        mass-spectrometry platforms for clinical proteomics.
+        Our biomarker work began in clinical proteomics of severe <em>Plasmodium vivax</em> malaria and dengue,
+        in collaboration with hospitals across India, and included a Raman-spectroscopy classifier able to
+        discriminate malaria- and dengue-infected sera. That work established the discipline we still apply:
+        well-characterised cohorts, orthogonal validation, and statistics that survive scrutiny.
+      </p>
+      <p>
+        The same standards now guide our search for plasma and EV-based markers of biological age, and our
+        comparisons of affinity-based platforms with mass spectrometry for clinical proteomics — a
+        contextual assessment of what each technology can and cannot deliver, rather than a ranking.
       </p>
       <span class="chip">Plasma proteomics</span><span class="chip">Raman spectroscopy</span><span class="chip chip--amber">Affinity vs MS</span><span class="chip chip--coral">Clinical cohorts</span>
     </div>
@@ -92,13 +122,46 @@ feature-img: "assets/img/header/research.jpg"
 </div>
 
 <div class="lab-section">
+  <h2>How we work</h2>
+  <div class="lab-cards">
+    <div class="lab-card">
+      <span class="lab-card__letter">1.</span><h3>Measure at cell-type resolution</h3>
+      <p>Bulk tissue averages away the biology we care about. Wherever possible we separate populations first and accept the harder, lower-input measurement that follows.</p>
+    </div>
+    <div class="lab-card lab-card--amber">
+      <span class="lab-card__letter">2.</span><h3>Pair mechanism with a measurable</h3>
+      <p>Every mechanistic project carries a question about what could be detected in an accessible sample — plasma, CSF, conditioned medium — so the finding has somewhere to go.</p>
+    </div>
+    <div class="lab-card lab-card--coral">
+      <span class="lab-card__letter">3.</span><h3>Validate orthogonally</h3>
+      <p>Discovery proteomics generates candidates, not conclusions. Targeted assays, imaging and functional readouts decide which survive.</p>
+    </div>
+    <div class="lab-card">
+      <span class="lab-card__letter">4.</span><h3>Share the method</h3>
+      <p>Protocols, acquisition parameters and analysis code are written to be reused, and raw data are deposited on publication.</p>
+    </div>
+  </div>
+</div>
+
+<div class="lab-section lab-section--tint">
   <h2>Proteomics Facility</h2>
   <p>
-    Sandip directs the Proteomics Facility of the MRC Toxicology Unit. The facility offers end-to-end support —
-    experimental design, sample preparation, LC-MS/MS acquisition (DDA, DIA, TMT, label-free and targeted),
-    reproducible quality control, and data analysis in Spectronaut, DIA-NN, MaxQuant and R — together with
-    training for PhD students, postdoctoral researchers and external collaborators.
-    Enquiries: <a href="mailto:proteomics@mrc-tox.cam.ac.uk">proteomics@mrc-tox.cam.ac.uk</a>.
+    Sandip directs the Proteomics Facility of the MRC Toxicology Unit, which supports researchers across
+    the Unit, the University and external institutions. The facility covers experimental design, sample
+    preparation, LC-MS/MS acquisition (DDA, DIA, TMT, label-free and targeted), reproducible quality
+    control, and data analysis, together with hands-on training. If you are weighing up a proteomics
+    experiment, we are happy to advise on feasibility, minimum sample requirements, quantification strategy,
+    approximate cost and realistic turnaround before you commit any material.
+  </p>
+  <p><a class="btn-lab" href="{{ '/facility/' | relative_url }}">Facility and services</a></p>
+
+  <h2>Collaborations</h2>
+  <p>
+    Our work is collaborative by design, with partners in the United Kingdom, the United States, Japan
+    and India — including the Buck Institute for Research on Aging, ACTREC/Tata Memorial Centre,
+    CSIR-CDRI, KEM Hospital Mumbai, Medical College Hospital Kolkata and S. P. Medical College Bikaner.
+    We welcome enquiries from groups whose biological question would benefit from deep, quantitative
+    proteomics.
   </p>
 
   <h2>Funding and partners</h2>
